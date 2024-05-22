@@ -1,0 +1,57 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-icon i {
+  font-size: 24px;
+}
+.sidebar {
+  min-height: 100vh;
+  transition: width 0.3s;
+  width: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sidebar:hover {
+  width: 200px;
+}
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.sidebar .nav-link i {
+  font-size: 24px;
+  width: 60px;
+  text-align: center;
+}
+.sidebar .nav-link span {
+  display: none;
+  margin-left: 10px;
+}
+.sidebar:hover .nav-link span {
+  display: inline;
+}
+.main {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+.sidebar:hover ~ .main {
+  margin-left: 140px;
+}
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.btn a:hover {
+  color: white;
+}
